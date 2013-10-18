@@ -1,4 +1,5 @@
 ProjectManager::Application.routes.draw do
+  resources :users
   root  'static_pages#home'
   match '/register',  to: 'users#new',            via: 'get'
   match '/help',      to: 'static_pages#help',    via: 'get'
